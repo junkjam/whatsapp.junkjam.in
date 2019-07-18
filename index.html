@@ -121,6 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                })
                .catch(err => {             
                     console.log('Something went wrong:', err);
+                    $(this).prev('input').val('').trigger('change').focus();
                }); 
           }
 
